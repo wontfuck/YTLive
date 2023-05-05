@@ -72,10 +72,10 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=WHEPzbFA3hw)
         EOL
 
-    - name: Get 東森娛樂台.m3u8
+    - name: Get 東森綜合台.m3u8
       run: |
-        touch ./東森娛樂台.m3u8
-        sudo cat >./東森娛樂台.m3u8 <<EOL
+        touch ./東森綜合台.m3u8
+        sudo cat >./東森綜合台.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
@@ -102,20 +102,20 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=B7Zp3d6xXWw)
         EOL
 
-    - name: Get 三立海外直播.m3u8
-      run: |
-        touch ./三立海外直播.m3u8
-        sudo cat >./三立海外直播.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/watch?v=jlldIiGA5bU)
-        EOL
+    # - name: Get 三立海外直播.m3u8
+    #   run: |
+    #     touch ./三立海外直播.m3u8
+    #     sudo cat >./三立海外直播.m3u8 <<EOL
+    #     #EXTM3U
+    #     #EXT-X-VERSION:3
+    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+    #     $(yt-dlp -g https://www.youtube.com/watch?v=jlldIiGA5bU)
+    #     EOL
 
-    - name: Get 三立iNEWS.m3u8
+    - name: Get 三立新闻台.m3u8
       run: |
-        touch ./三立iNEWS.m3u8
-        sudo cat >./三立iNEWS.m3u8 <<EOL
+        touch ./三立新闻台.m3u8
+        sudo cat >./三立新闻台.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
