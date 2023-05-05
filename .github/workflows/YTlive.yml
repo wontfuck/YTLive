@@ -365,15 +365,15 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=HRwAMooYM3w)
         EOL
 
-    - name: Get 小資女孩向前衝.m3u8
-      run: |
-        touch ./小資女孩向前衝.m3u8
-        sudo cat >./小資女孩向前衝.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/watch?v=Il3YPiaW24Q)
-        EOL
+    # - name: Get 小資女孩向前衝.m3u8
+    #   run: |
+    #     touch ./小資女孩向前衝.m3u8
+    #     sudo cat >./小資女孩向前衝.m3u8 <<EOL
+    #     #EXTM3U
+    #     #EXT-X-VERSION:3
+    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+    #     $(yt-dlp -g https://www.youtube.com/watch?v=Il3YPiaW24Q)
+    #     EOL
 
     # - name: Get 我的自由年代.m3u8
     #   run: |
