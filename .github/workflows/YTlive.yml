@@ -32,25 +32,25 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=xL0ch83RAK8)
         EOL
 
-    # - name: Get 華視新聞.m3u8
-    #   run: |
-    #     touch ./華視新聞.m3u8
-    #     sudo cat >./華視新聞.m3u8 <<EOL
-    #     #EXTM3U
-    #     #EXT-X-VERSION:3
-    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-    #     $(yt-dlp -g https://www.youtube.com/watch?v=wM0g8EoUZ_E)
-    #     EOL
+    - name: Get 華視新聞.m3u8
+      run: |
+        touch ./華視新聞.m3u8
+        sudo cat >./華視新聞.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/channel/UCDCJyLpbfgeVE9iZiEam-Kg/live)
+        EOL
 
-    # - name: Get 公共電視.m3u8
-    #   run: |
-    #     touch ./公共電視.m3u8
-    #     sudo cat >./公共電視.m3u8 <<EOL
-    #     #EXTM3U
-    #     #EXT-X-VERSION:3
-    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-    #     $(yt-dlp -g "https://www.youtube.com/channel/UCXgIO9jJVsX5_2ideiSkfvA/live")
-    #     EOL
+    - name: Get 公共電視.m3u8
+      run: |
+        touch ./公共電視.m3u8
+        sudo cat >./公共電視.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g "https://www.youtube.com/channel/UCXgIO9jJVsX5_2ideiSkfvA/live")
+        EOL
 
     - name: Get 民視新聞.m3u8
       run: |
@@ -162,15 +162,15 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/c/yoyotvebc/live)
         EOL
 
-    - name: Get KPOPLive.m3u8
-      run: |
-        touch ./KPOPLive.m3u8
-        sudo cat >./KPOPLive.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/channel/UCPde4guD9yFBRzkxk2PatoA/live)
-        EOL
+    # - name: Get KPOPLive.m3u8
+    #   run: |
+    #     touch ./KPOPLive.m3u8
+    #     sudo cat >./KPOPLive.m3u8 <<EOL
+    #     #EXTM3U
+    #     #EXT-X-VERSION:3
+    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+    #     $(yt-dlp -g https://www.youtube.com/channel/UCPde4guD9yFBRzkxk2PatoA/live)
+    #     EOL
 
     # - name: Get KKBOX.m3u8
     #   run: |
