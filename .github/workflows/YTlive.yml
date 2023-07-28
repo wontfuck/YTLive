@@ -32,25 +32,25 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=xL0ch83RAK8)
         EOL
 
-    # - name: Get 華視新聞.m3u8
-    #   run: |
-    #     touch ./華視新聞.m3u8
-    #     sudo cat >./華視新聞.m3u8 <<EOL
-    #     #EXTM3U
-    #     #EXT-X-VERSION:3
-    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-    #     $(yt-dlp -g https://www.youtube.com/channel/UCDCJyLpbfgeVE9iZiEam-Kg/live)
-    #     EOL
+    - name: Get 華視新聞.m3u8
+      run: |
+        touch ./華視新聞.m3u8
+        sudo cat >./華視新聞.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=wM0g8EoUZ_E)
+        EOL
 
-    # - name: Get 公共電視.m3u8
-    #   run: |
-    #     touch ./公共電視.m3u8
-    #     sudo cat >./公共電視.m3u8 <<EOL
-    #     #EXTM3U
-    #     #EXT-X-VERSION:3
-    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-    #     $(yt-dlp -g "https://www.youtube.com/channel/UCXgIO9jJVsX5_2ideiSkfvA/live")
-    #     EOL
+    - name: Get 公共電視.m3u8
+      run: |
+        touch ./公共電視.m3u8
+        sudo cat >./公共電視.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=4Uc00FPs27M)
+        EOL
 
     - name: Get 民視新聞.m3u8
       run: |
@@ -129,7 +129,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g http://www.youtube.com/channel/UCL0_NxCvkcXwZHpvqgMZY-A/live)
+        $(yt-dlp -g https://www.youtube.com/watch?v=m_dhMSvUCIc)
         EOL
 
     - name: Get 鏡新聞.m3u8
@@ -355,15 +355,15 @@ jobs:
     #     $(yt-dlp -g https://www.youtube.com/watch?v=lz7WqYKTpo4)
     #     EOL
 
-    - name: Get 犀利人妻.m3u8
-      run: |
-        touch ./犀利人妻.m3u8
-        sudo cat >./犀利人妻.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/watch?v=HRwAMooYM3w)
-        EOL
+    # - name: Get 犀利人妻.m3u8
+    #   run: |
+    #     touch ./犀利人妻.m3u8
+    #     sudo cat >./犀利人妻.m3u8 <<EOL
+    #     #EXTM3U
+    #     #EXT-X-VERSION:3
+    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+    #     $(yt-dlp -g https://www.youtube.com/watch?v=HRwAMooYM3w)
+    #     EOL
 
     # - name: Get 小資女孩向前衝.m3u8
     #   run: |
