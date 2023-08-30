@@ -49,7 +49,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/watch?v=4Uc00FPs27M)
+        $(yt-dlp -g https://www.youtube.com/watch?v=C6gYqSHLRw4)
         EOL
 
     - name: Get 民視新聞.m3u8
@@ -72,14 +72,14 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=WHEPzbFA3hw)
         EOL
 
-    - name: Get 東森綜合台.m3u8
+    - name: Get 東森新聞.m3u8
       run: |
-        touch ./東森綜合台.m3u8
-        sudo cat >./東森綜合台.m3u8 <<EOL
+        touch ./東森新聞.m3u8
+        sudo cat >./東森新聞.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/watch?v=OQdX93g8Wos)
+        $(yt-dlp -g https://www.youtube.com/watch?v=S5WOGu2HSes)
         EOL
 
     - name: Get 中天新聞.m3u8
@@ -89,7 +89,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/watch?v=NpmP3jIgcQI)
+        $(yt-dlp -g https://www.youtube.com/watch?v=v49mDmyiDTU)
         EOL
 
     - name: Get 寰宇新聞.m3u8
