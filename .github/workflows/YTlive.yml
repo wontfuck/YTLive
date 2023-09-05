@@ -486,11 +486,18 @@ jobs:
         $(curl https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTVTravel | awk -F\" '{print $6}')
         EOL
 
+    # - name : Upload artifact
+    #   uses: actions/upload-artifact@master
+    #   with:
+    #     name: YTlive m3u8
+    #     path: .
+
     - name : Upload artifact
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@v3
       with:
         name: YTlive m3u8
         path: .
+
 
     - name: Git push assets to "YTlive" branch
       run: |
