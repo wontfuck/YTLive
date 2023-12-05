@@ -270,7 +270,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/watch?v=yuhgIlXwPh8)
+        $(yt-dlp -g https://www.youtube.com/watch?v=7IyxOiGMLgw)
         EOL
 
     - name: Get 美好購物2台.m3u8
@@ -325,25 +325,25 @@ jobs:
     #     $(yt-dlp -g https://www.youtube.com/live/_MOhQbKegXs)
     #     EOL
 
-    # - name: Get 知否知否應是綠肥紅瘦.m3u8
-    #   run: |
-    #     touch ./知否知否應是綠肥紅瘦.m3u8
-    #     sudo cat >./知否知否應是綠肥紅瘦.m3u8 <<EOL
-    #     #EXTM3U
-    #     #EXT-X-VERSION:3
-    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-    #     $(yt-dlp -g https://www.youtube.com/watch?v=iZxJDOqg_E0)
-    #     EOL
+    - name: Get 知否知否應是綠肥紅瘦.m3u8
+      run: |
+        touch ./知否知否應是綠肥紅瘦.m3u8
+        sudo cat >./知否知否應是綠肥紅瘦.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=iZxJDOqg_E0)
+        EOL
 
-    # - name: Get 步步驚心.m3u8
-    #   run: |
-    #     touch ./步步驚心.m3u8
-    #     sudo cat >./步步驚心.m3u8 <<EOL
-    #     #EXTM3U
-    #     #EXT-X-VERSION:3
-    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-    #     $(yt-dlp -g https://www.youtube.com/watch?v=0jwzYLZF9AI)
-    #     EOL
+    - name: Get 新兵日記.m3u8
+      run: |
+        touch ./新兵日記.m3u8
+        sudo cat >./新兵日記.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=hbm8Uov-YOE)
+        EOL
 
     # - name: Get 公主小妹.m3u8
     #   run: |
@@ -375,15 +375,15 @@ jobs:
     #     $(yt-dlp -g https://www.youtube.com/watch?v=Il3YPiaW24Q)
     #     EOL
 
-    # - name: Get 我的自由年代.m3u8
-    #   run: |
-    #     touch ./我的自由年代.m3u8
-    #     sudo cat >./我的自由年代.m3u8 <<EOL
-    #     #EXTM3U
-    #     #EXT-X-VERSION:3
-    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-    #     $(yt-dlp -g https://www.youtube.com/watch?v=VM4Qrlcgq0U)
-    #     EOL
+    - name: Get 去有風的地方.m3u8
+      run: |
+        touch ./去有風的地方.m3u8
+        sudo cat >./去有風的地方.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=be6L9zpVqw4)
+        EOL
 
     - name: Get 飢餓遊戲.m3u8
       run: |
