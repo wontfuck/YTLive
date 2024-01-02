@@ -383,7 +383,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(curl https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTV | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
+        $(curl -k https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTV | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
         EOL
 
     - name: Get 民視第一台.m3u8
@@ -393,7 +393,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(curl https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FMTV | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
+        $(curl -k https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FMTV | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
         EOL
 
     - name: Get 民視台灣台.m3u8
@@ -403,7 +403,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(curl https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTTV | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
+        $(curl -k https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTTV | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
         EOL
 
     - name: Get 民視新聞台.m3u8
@@ -413,7 +413,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(curl https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTVNews | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
+        $(curl -k https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTVNews | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
         EOL
 
     - name: Get 民視影劇台.m3u8
@@ -423,7 +423,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(curl https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTVDrama | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
+        $(curl -k https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTVDrama | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
         EOL
 
     - name: Get 民視綜藝台.m3u8
@@ -433,7 +433,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(curl https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTVVariety | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
+        $(curl -k https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTVVariety | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
         EOL
 
     - name: Get 民視旅遊台.m3u8
@@ -443,7 +443,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(curl https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTVTravel | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
+        $(curl -k https://app.4gtv.tv/Data/GetChannelURL_Mozai.ashx?ChannelName=FTVTravel | awk -F\" '{print $6}' | sed 's/master.m3u8/stream2.m3u8/g')
         EOL
 
     # - name : Upload artifact
