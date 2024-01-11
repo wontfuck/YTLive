@@ -79,7 +79,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/watch?v=S5WOGu2HSes)
+        $(yt-dlp -g https://www.youtube.com/watch?v=2dfAzcDf8Zg)
         EOL
 
     - name: Get 中天新聞.m3u8
@@ -132,15 +132,15 @@ jobs:
         $(yt-dlp -g "https://www.youtube.com/channel/UC4LjkybVKXCDlneVXlKAbmw/live")
         EOL        
 
-    - name: Get 幸福空間居家台.m3u8
-      run: |
-        touch ./幸福空間居家台.m3u8
-        sudo cat >./幸福空間居家台.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/channel/UCoo-jAsJgM8z09ddlhcBlSA/live)
-        EOL
+    # - name: Get 幸福空間居家台.m3u8
+    #   run: |
+    #     touch ./幸福空間居家台.m3u8
+    #     sudo cat >./幸福空間居家台.m3u8 <<EOL
+    #     #EXTM3U
+    #     #EXT-X-VERSION:3
+    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+    #     $(yt-dlp -g https://www.youtube.com/channel/UCoo-jAsJgM8z09ddlhcBlSA/live)
+    #     EOL
 
     - name: Get 東森幼幼台.m3u8
       run: |
@@ -240,7 +240,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/watch?v=LEOat38Iuao)
+        $(yt-dlp -g https://www.youtube.com/watch?v=lEXITHxcagI)
         EOL
 
 
