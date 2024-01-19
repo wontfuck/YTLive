@@ -52,6 +52,16 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=C6gYqSHLRw4)
         EOL
 
+    - name: Get 公視新聞.m3u8
+      run: |
+        touch ./公視新聞.m3u8
+        sudo cat >./公視新聞.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=quwqlazU-c8)
+        EOL
+
     - name: Get 民視新聞.m3u8
       run: |
         touch ./民視新聞.m3u8
@@ -335,15 +345,35 @@ jobs:
     #     $(yt-dlp -g https://www.youtube.com/watch?v=Il3YPiaW24Q)
     #     EOL
 
-    # - name: Get 去有風的地方.m3u8
-    #   run: |
-    #     touch ./去有風的地方.m3u8
-    #     sudo cat >./去有風的地方.m3u8 <<EOL
-    #     #EXTM3U
-    #     #EXT-X-VERSION:3
-    #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-    #     $(yt-dlp -g https://www.youtube.com/watch?v=be6L9zpVqw4)
-    #     EOL
+    - name: Get 去有風的地方.m3u8
+      run: |
+        touch ./去有風的地方.m3u8
+        sudo cat >./去有風的地方.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=be6L9zpVqw4)
+        EOL
+
+    - name: Get 軍師聯盟.m3u8
+      run: |
+        touch ./軍師聯盟.m3u8
+        sudo cat >./軍師聯盟.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=FfUCTPnvbFs)
+        EOL
+
+    - name: Get 向風而行.m3u8
+      run: |
+        touch ./向風而行.m3u8
+        sudo cat >./向風而行.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=oDtZ1pk_Pxw)
+        EOL
 
     - name: Get 飢餓遊戲.m3u8
       run: |
