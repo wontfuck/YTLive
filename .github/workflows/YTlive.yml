@@ -382,15 +382,15 @@ jobs:
           $(yt-dlp -g https://www.youtube.com/channel/UCriy3vlLtiBov3nLdPLadUg/live)
           EOL
 
-      - name: Get 綜藝大熱門.m3u8
-        run: |
-          touch ./綜藝大熱門.m3u8
-          sudo cat >./綜藝大熱門.m3u8 <<EOL
-          #EXTM3U
-          #EXT-X-VERSION:3
-          #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-          $(yt-dlp -g https://www.youtube.com/channel/UCkELMMBdy4gPj6ooQwYJ-yg/live)
-          EOL
+      # - name: Get 綜藝大熱門.m3u8
+      #   run: |
+      #     touch ./綜藝大熱門.m3u8
+      #     sudo cat >./綜藝大熱門.m3u8 <<EOL
+      #     #EXTM3U
+      #     #EXT-X-VERSION:3
+      #     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+      #     $(yt-dlp -g https://www.youtube.com/channel/UCkELMMBdy4gPj6ooQwYJ-yg/live)
+      #     EOL
 
       - name: Get 天才衝衝衝.m3u8
         run: |
